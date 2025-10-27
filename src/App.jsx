@@ -1,16 +1,11 @@
 import './App.css'
+import headshot from './assets/headshot.jpg'
 
 const navLinks = [
     { id: 'research', label: 'Research' },
     { id: 'publications', label: 'Publications' },
     { id: 'teaching', label: 'Teaching' },
     { id: 'contact', label: 'Contact' },
-]
-
-const researchAreas = [
-    'Scalable Gaussian processes',
-    'Preferential sampling',
-    'Spatial Causal Inference'
 ]
 
 const researchProjects = [
@@ -123,6 +118,15 @@ function App() {
                 </nav>
 
                 <div className="hero__body">
+                    <div className="hero__media">
+                        <figure className="headshot">
+                            <div className="headshot__frame">
+                                <img src={headshot} alt="Portrait of Zachary D. Calhoun" />
+                            </div>
+                            <figcaption>Zachary D. Calhoun</figcaption>
+                        </figure>
+                    </div>
+
                     <div className="hero__intro">
                         <p className="hero__eyebrow">
                             PhD Candidate · Civil & Environmental Engineering, Duke University
@@ -143,27 +147,6 @@ function App() {
                             </a>
                         </div>
                     </div>
-
-                    <aside className="hero__aside">
-                        <div className="info-card">
-                            <h3>Research focus</h3>
-                            <ul>
-                                {researchAreas.map((area) => (
-                                    <li key={area}>{area}</li>
-                                ))}
-                            </ul>
-                        </div>
-                        <div className="info-card">
-                            <h3>Currently</h3>
-                            <ul>
-                                {news.slice(0, 2).map((item) => (
-                                    <li key={item.date}>
-                                        <span className="info-card__date">{item.date}</span> {item.text}
-                                    </li>
-                                ))}
-                            </ul>
-                        </div>
-                    </aside>
                 </div>
             </header>
 
@@ -176,10 +159,10 @@ function App() {
                     <div className="card-grid">
                         {researchProjects.map((project) => (
                             <article className="card" key={project.title}>
-                                <p className="card__kicker">{project.type}</p>
+                                {project.type && <p className="card__kicker">{project.type}</p>}
                                 <h3>{project.title}</h3>
                                 <p>{project.summary}</p>
-                                <p className="card__meta">{project.status}</p>
+                                {project.status && <p className="card__meta">{project.status}</p>}
                             </article>
                         ))}
                     </div>
