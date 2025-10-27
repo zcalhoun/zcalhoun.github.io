@@ -1,5 +1,6 @@
 import './App.css'
 import headshot from './assets/headshot.jpg'
+import cv from './assets/calhoun-cv.pdf'
 
 const navLinks = [
     { id: 'research', label: 'Research' },
@@ -142,7 +143,7 @@ function App() {
                             <a className="button button--primary" href="#contact">
                                 Let&apos;s collaborate
                             </a>
-                            <a className="button button--ghost" href="/cv.pdf">
+                            <a className="button button--ghost" href={cv}>
                                 Download CV
                             </a>
                         </div>
