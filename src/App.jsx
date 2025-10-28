@@ -78,12 +78,12 @@ const teaching = [
 
 const news = [
     {
-        date: 'July 2025',
+        date: 'August 2025',
         text: 'Presented on preferential sampling at JSM 2025 in Nashville, TN.',
     },
     {
-        date: 'August 2025',
-        text: 'Presented my work on spatiotemporal Gaussian processes at ICUC25.',
+        date: 'July 2025',
+        text: 'Presented my work on spatiotemporal Gaussian processes at ICUC25 in Rotterdam.',
     },
     {
         date: 'Summer 2025',
