@@ -7,6 +7,7 @@ import Home from './pages/Home.jsx'
 import Research from './pages/Research.jsx'
 import Teaching from './pages/Teaching.jsx'
 import Blog from './pages/Blog.jsx'
+import BlogPost from './pages/BlogPost.jsx'
 import Contact from './pages/Contact.jsx'
 
 const router = createHashRouter([
@@ -18,6 +19,7 @@ const router = createHashRouter([
             { path: 'research', element: <Research /> },
             { path: 'teaching', element: <Teaching /> },
             { path: 'blog', element: <Blog /> },
+            { path: 'blog/:slug', element: <BlogPost /> },
             { path: 'contact', element: <Contact /> },
         ],
     },

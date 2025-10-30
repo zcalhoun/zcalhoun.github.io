@@ -1,6 +1,8 @@
 import Section from '../components/Section.jsx'
+import { Link } from 'react-router-dom'
+import { getAllPosts } from '../posts/index.js'
 
-const posts = []
+const posts = getAllPosts()
 
 function Blog() {
     return (
@@ -25,12 +27,18 @@ function Blog() {
                     <div className="blog-grid">
                         {posts.map((post) => (
                             <article className="card" key={post.slug}>
-                                <p className="card__kicker">{post.date}</p>
+                                <p className="card__kicker">
+                                    {new Date(post.date).toLocaleDateString(undefined, {
+                                        year: 'numeric',
+                                        month: 'long',
+                                        day: 'numeric',
+                                    })}
+                                </p>
                                 <h3>{post.title}</h3>
                                 <p>{post.excerpt}</p>
-                                <a className="publication__link" href={post.url}>
+                                <Link className="publication__link" to={`/blog/${post.slug}`} state={{ post }}>
                                     Read post
-                                </a>
+                                </Link>
                             </article>
                         ))}
                     </div>
