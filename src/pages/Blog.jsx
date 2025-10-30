@@ -10,8 +10,7 @@ function Blog() {
             <header className="page-intro">
                 <h1>Blog</h1>
                 <p>
-                    Notes on spatial statistics, climate adaptation, and mentoring as I navigate life as an environmental
-                    data scientist.
+                    Notes on spatial statistics, climate adaptation, and higher education.
                 </p>
             </header>
 
