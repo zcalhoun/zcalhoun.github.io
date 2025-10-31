@@ -78,3 +78,27 @@ export const newsItems = [
         text: 'Led 4 undergraduates on a Climate+ 2025 project.',
     },
 ]
+
+
+export const links = [
+    {
+        title: "Environmental Spatial Data Analysis",
+        comment: "A GitHub repository from Professor Nate Chaney with useful code examples.",
+        link: "https://github.com/chaneyn/ESDA_CEE506"
+    }
+]
+
+export const textbooks = [
+    {
+        title: "Urban Climates",
+        authors: "T. R. Oke, Vancouver, G. Mills, A. Christen, J. A. Voogt",
+        comment: "All you need to know about Urban Climates.",
+        link: "https://doi.org/10.1017/9781139016476"
+    },
+    {
+        title: "Fluent Python",
+        authors: "Luciano Ramalho",
+        comment: "Learn the basics, and learn the Python Standard Library!",
+        link: "https://www.oreilly.com/library/view/fluent-python-2nd/9781492056348/"
+    }
+]

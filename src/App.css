@@ -7,7 +7,7 @@
 .page {
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 2rem;
 }
 
 .nav {
@@ -21,6 +21,10 @@
     background: rgba(239, 244, 252, 0.9);
     border-bottom: 1px solid rgba(15, 23, 42, 0.08);
     backdrop-filter: blur(14px);
+}
+
+.publication {
+    font-style: italic;
 }
 
 .nav__brand {
@@ -419,7 +423,6 @@
 .page-intro {
     display: grid;
     gap: 0.75rem;
-    padding-top: 2rem;
 }
 
 .page-intro h1 {

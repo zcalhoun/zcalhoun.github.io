@@ -5,8 +5,10 @@ const navLinks = [
     { to: '/', label: 'Home', end: true },
     { to: '/research', label: 'Research' },
     { to: '/teaching', label: 'Teaching' },
+    { to: '/resources', label: 'Resources' },
     { to: '/blog', label: 'Blog' },
     { to: '/contact', label: 'Contact' },
+
 ]
 
 function App() {
