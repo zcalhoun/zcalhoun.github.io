@@ -85,6 +85,11 @@ export const links = [
         title: "Environmental Spatial Data Analysis",
         comment: "A GitHub repository from Professor Nate Chaney with useful code examples.",
         link: "https://github.com/chaneyn/ESDA_CEE506"
+    },
+    {
+        title: "A few jupyter notebooks demonstrating how to use GEE",
+        comment: "I get asked for help with GEE a lot, so I'm putting together some simple notebooks to show off some basic usage.",
+        link: "https://github.com/zcalhoun/gee_demo"
     }
 ]
 

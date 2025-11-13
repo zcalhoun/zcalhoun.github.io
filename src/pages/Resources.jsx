@@ -6,7 +6,7 @@ function Resources() {
             <header className="page-intro">
                 <h1>Resources</h1>
                 <p>
-                    A few links and books I've found helpful!
+                    A few links and books I've found helpful.
                 </p>
             </header>
 
