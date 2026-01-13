@@ -495,15 +495,15 @@
 
 .blog-post__content {
     display: grid;
-    gap: 1.25rem;
+    gap: 1.0em;
     color: #1f2937;
     line-height: 1.7;
 }
 
 .blog-post__content h2,
 .blog-post__content h3 {
-    margin-top: 1.5em;
     color: #0f172a;
+    margin: 0em;
 }
 
 .blog-post__content p {
