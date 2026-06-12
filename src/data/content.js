@@ -18,11 +18,11 @@ export const researchProjects = [
 
 export const publications = [
     {
-        title: 'Scalable and robust Gaussian processes for reanalysis of urban air temperature with crowdsourced meteorological data',
+        title: 'Probabilistic interpolation of crowdsourced meteorological data for higher-resolution gridded estimates of surface air temperature',
         authors: 'Z. D. Calhoun, M. Bergin, D. Carlson',
-        venue: 'Under review at Urban Climate',
-        year: 2025,
-        link: 'https://eartharxiv.org/repository/view/10601/',
+        venue: 'Urban Climate',
+        year: 2026,
+        link: 'https://www.sciencedirect.com/science/article/pii/S2212095526002087',
     },
     {
         title: 'Refining citizen climate science: Addressing preferential sampling for improved estimates of urban heat',
@@ -65,6 +65,10 @@ export const teachingTimeline = [
 ]
 
 export const newsItems = [
+    {
+        date: "June 2026",
+        text: "My article on interpolating crowdsourced data was published at Urban Climate."
+    },
     {
         date: 'August 2025',
         text: 'Presented on preferential sampling at JSM 2025 in Nashville, TN.',
